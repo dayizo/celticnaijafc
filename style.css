@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.whitebg{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgbg{
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    background-image: linear-gradient(#fff, transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2.5rem;
+  }
+
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+    cursor: pointer;
+}  
+
+.logo img{
+    width: 20%;
+}
+
+.logo h2 {
+    color: rgb(13, 148, 13);
+    font-size: 2.7rem;
+    font-family: "Chiller";
+}
+
+.item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.item li {
+list-style: none;
+padding-right: 4rem;
+position: relative;
+}
+
+.item li a{
+color: green;
+font-size: 1.2rem;
+text-decoration: none;
+text-transform: uppercase;
+transition: ease 0.7s;
+}
+
+#menu{
+  color: green;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: ease 0.7s; 
+  display: none;
+}
+
+.item li a:hover::after,
+.item li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: rgb(255, 255, 13);
+  position: absolute;
+  bottom: -4px;
+  left: 5px;
+}
+
+.green_nav .item li a:hover::after,
+.green_nav .item li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: rgb(13, 148, 13);
+  position: absolute;
+  bottom: -4px;
+  left: 5px;
+}
+
+.mid {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .mid p {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+  }
+
+  #fit {
+    color: rgb(165, 42, 42);
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+  
+  #fo {
+    color: rgb(13, 148, 13);
+    text-shadow: -1px -1px 0 rgb(13, 148, 13), 1px -1px 0 #fff,
+      -1px 1px 0 rgb(13, 148, 13), 2px 2px 0 #fff;
+    font-size: 1.3rem;
+  }
+  
+  #fin {
+    color: rgb(255, 255, 13);
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .mid h2 {
+    color: #fff;
+    font-size: 3rem;
+  }
+  
+  .mid .btn {
+    margin-top: 13rem;
+  }
+  
+  .mid .btn a {
+      font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .mid .btn a.simple {
+    color: rgb(255, 255, 13);
+    font-weight: 600;
+    padding: 0.9rem 0.6rem;
+  }
+  
+  .mid .btn a.simple:hover {
+    color: rgb(165, 42, 42);
+  }
+  
+  .mid .btn a.border {
+    color: rgb(165, 42, 42);
+    border: 1px solid rgb(165, 42, 42);
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 0.9rem 0.6rem;
+  }
+  
+  .mid .btn a.border:hover {
+    background-color: rgb(255, 255, 13);
+    border: 1px solid rgb(255, 255, 13);
+  }
+
+  /* Match Day */
+
+  .form {
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form h2 {
+    color: rgb(165, 42, 42);
+    font-size: xx-large;
+    font-weight: 900;
+    padding-bottom: 3rem;
+  }
+
+  .form input {
+    text-align: center;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .form button {
+    width: 120px;
+    text-align: center;
+    color: rgb(255, 255, 13);
+    background-color: rgb(165, 42, 42);
+    border: 1px solid rgb(255, 255, 13);
+    border-radius: 3px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.8rem;
+  }
+
+  .form button:hover {
+    cursor: pointer;
+    background-color: rgb(13, 148, 13);
+    border: 1px solid rgb(255, 255, 13);
+  }
+
+  /* Learn More */
+
+  .details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 15rem;
+  }
+
+  .details h3,
+h6,
+h5 {
+  color: rgb(165, 42, 42);
+}
+
+.details .one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.details .one h3 {
+  font-size: 3rem;
+  padding-bottom: 1.1rem;
+  margin-top: 2rem;
+}
+
+.details .one h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+
+.details .one p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}
+
+.details .two {
+  width: 45%;
+  text-align: center;
+  border-left: 1.3px solid rgb(13, 148, 13);
+}
+
+.details .one a {
+  text-align: center;
+  color: rgb(255, 255, 13);
+  background-color: rgb(165, 42, 42);
+  border: 1px solid rgb(255, 255, 13);
+  border-radius: 3px;
+  font-weight: 600;
+  padding: 0.9rem 0.6rem;
+}
+
+.details .one a:hover {
+  background-color: rgb(13, 148, 13);
+  border: 1px solid #fff;
+}
+
+/* Sign Up */
+
+.form {
+  display: flex;
+flex-direction: column ; 
+ justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 33%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+
+.form button {
+  width: 120px;
+  text-align: center;
+  color: rgb(255, 255, 13);
+  background-color: rgb(165, 42, 42);
+  border: 1px solid rgb(255, 255, 13);
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.6rem 0.3rem;
+}
+
+.form input {
+  text-align: center;
+  width: 80%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+#signup-back .form h2 {
+  color: rgb(165, 42, 42);
+  font-size: xx-large;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+#signup-back .form span {
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+/* Blog */
+.intro {
+  font-size: x-large;
+  padding: 0 20px 0 20px;
+  text-align: center;
+}
+
+.intro .small {
+  color: rgb(13, 148, 13);
+  font-weight: 400;
+}
+.intro .big {
+  color: rgb(165, 42, 42);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+}
+
+.blog {
+  padding: 100px 400px 0 50px;
+}
+
+.blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog .blod-details {
+  width: 50%;
+}
+
+.blog .blod-details h4{
+  font-size: 21px;
+  color: rgb(13, 148, 13);
+}
+
+.blog .blod-details a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(165, 42, 42);
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+
+.blog .blod-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: rgb(165, 42, 42);
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+.blog .blod-details a:hover {
+  color: rgb(13, 148, 13);
+}
+
+.blog .blod-details a:hover::after {
+  background-color: rgb(13, 148, 13);
+}
+
+.blog .blog-box h1 {
+  position: absolute;
+  top: -53px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #606063;
+  z-index: -9;
+}
+
+@media screen and (max-width: 1042px){
+
+.logo img{
+ width: 25%;
+}
+
+  .item li {
+    padding-right: 2rem;
+}
+
+.mid {
+  top: 45%;
+}
+
+/* Match Day */
+
+.form {
+  top: 25%;
+  left: 27%;
+}
+
+/* Learn More */
+.details {
+  padding: 0.5rem 8rem;
+}
+
+.details .one {
+  width: 80%;
+  margin-right: 3rem;
+}
+
+/* Sign Up */
+
+.form {
+top: 20%
+}
+}
+
+@media screen and (max-width: 991px){
+  .mid{
+    top: 45%;
+  }
+
+  .mid .btn {
+    margin-top: 8rem;
+}
+
+.mid h2 span{
+  color: rgb(13, 148, 13);
+  text-shadow: -1px -1px 0 rgb(13, 148, 13), 1px -1px 0 #fff,
+  -1px 1px 0 rgb(13, 148, 13), 2px 2px 0 #fff;
+}
+
+.blog {
+  padding: 100px 300px 0 50px;
+}
+}
+
+@media screen and (max-width: 768px){
+#menu{
+    display: initial;
+  }
+
+.logo{
+  width: 50%;
+}
+ 
+#item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 10%;
+    right: -300px;
+    transition: 0.3s;
+  }
+
+#item li{
+    padding-top: 15px;
+  }
+
+#item li a{
+    color: #fff;
+  }
+
+.mid{
+  top: 42%;
+}
+  .mid p {
+    margin-bottom: 3rem;
+  }
+.mid h2{
+   color: rgb(13, 148, 13);
+  text-shadow: -1px -1px 0 rgb(13, 148, 13), 1px -1px 0 #fff,
+  -1px 1px 0 rgb(13, 148, 13), 2px 2px 0 #fff;
+  font-size: 2rem;
+}
+mid .btn {
+  margin-top: 6rem;
+}
+
+.form h2{
+  font-size: 1.5rem;
+}
+
+#form h2{
+  padding-bottom: 10px;
+}
+
+#form form {
+margin-top: -40px;
+}
+
+/* Blog */
+
+.green_nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.blog {
+  padding: 100px 50px 0 50px;
+}
+
+.blog .blog-box h1 {
+ top: -63px;
+}
+
+/* Learn More */
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details .one h3, .details .one h6, .details .one p {
+text-align: center;
+}
+
+.details .two {
+  text-align: inherit;
+  border-left: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+@media screen and (max-width: 496px){
+
+
+}
